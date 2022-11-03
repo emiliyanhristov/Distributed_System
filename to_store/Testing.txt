@@ -1,0 +1,8 @@
+STQL consist of two lexers that define the lexical rules. The first one, handles
+the turtle files and the second, handles the queries in the languge. The lexer for
+the turtle files recognizes the different parts of a turtle triple and creates
+corresponding tokens that will be parsed lates. It recognizes the base, prefix,
+URIs, integers, string and booleans (for the Objects) and the different special
+symbols that are within the file. The lexer for the queries, creates tokens for 
+the different key words and the special characters within the queries. Both lexers,
+also allow for comments in the code (lines that start with --).
